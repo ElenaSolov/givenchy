@@ -15,6 +15,7 @@
 }
 
 .header {
+  box-sizing: border-box;
   width: 100%;
   background-color: #e7e7e2;
   padding: 0 24px;
@@ -22,6 +23,7 @@
 .header__container {
   position: relative;
   margin: 0 auto;
+  padding-top: 32px;
   max-width: 1440px;
   background-image: url(./images/header.jpg);
   background-size: contain;
@@ -33,6 +35,7 @@
   display: flex;
   align-items: center;
   height: 40px;
+  align-self: start;
 }
 .header__menu-btn {
   width: 40px;
@@ -107,7 +110,7 @@
   display: flex;
   margin: 0;
   padding: 0;
-  width: 33%;
+  width: 480px;
   height: 100%;
   background-color: black;
   flex-direction: column;
@@ -137,4 +140,64 @@
   background-image: url(./images/close-button.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (max-width: 1300px) {
+  .header__container {
+    min-height: 646px;
+  }
+  .header__title {
+    font-size: 32px;
+    margin-top: 223px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0 20px;
+  }
+  .header__container {
+    min-height: 526px;
+    background-image: url(./images/header-tablet.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__capture {
+    font-size: 14px;
+  }
+  .header__title {
+    margin: 73px 0 0;
+    max-width: 300px;
+    font-size: 24px;
+  }
+  .header__menu-btn {
+    width: 20px;
+    height: 20px;
+  }
+  .header__btn {
+    max-width: 300px;
+    width: 100%;
+    margin: 32px 0 0;
+    font-size: 14px;
+  }
+  .header__menu {
+    height: 20px;
+  }
+  .header__list {
+    width: 100%;
+  }
+  .header__close {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .header__container {
+    min-height: 426px;
+    background-size: cover;
+  }
+  .header__close {
+    width: 25px;
+    height: 25px;
+    margin: 25px;
+  }
 }/*# sourceMappingURL=index.css.map */
