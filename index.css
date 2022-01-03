@@ -290,8 +290,13 @@
 }
 .about__img {
   display: block;
-  margin: 0 195px 0 0;
   max-width: 700px;
+}
+.about__img_size_l {
+  margin: 0 195px 0 0;
+}
+.about__img_size_m {
+  margin: 0 82px 0 0;
 }
 @media screen and (max-width: 1024px) {
   .about__article {
@@ -299,6 +304,12 @@
   }
   .about__quote {
     max-width: 364px;
+  }
+  .about__img_size_l {
+    margin-right: 141px;
+  }
+  .about__img_size_m {
+    margin-right: 60px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -323,7 +334,11 @@
   .about__author {
     margin-top: 20px;
   }
-  .about__img {
+  .about__img_size_l {
+    max-width: 100%;
+    margin: 0;
+  }
+  .about__img_size_m {
     max-width: 100%;
     margin: 0;
   }

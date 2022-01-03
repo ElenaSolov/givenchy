@@ -54,8 +54,15 @@
 
   &__img {
     display: block;
-    margin: 0 195px 0 0;
+
     max-width: 700px;
+
+    &_size_l {
+      margin: 0 195px 0 0;
+    }
+    &_size_m {
+      margin: 0 82px 0 0;
+    }
   }
 
   @media screen and (max-width: 1024px) {
@@ -64,6 +71,12 @@
     }
     &__quote {
       max-width: 364px;
+    }
+    &__img_size_l {
+      margin-right: 141px;
+    }
+    &__img_size_m {
+      margin-right: 60px;
     }
   }
 
@@ -92,7 +105,11 @@
       margin-top: 20px;
     }
 
-    &__img {
+    &__img_size_l {
+      max-width: 100%;
+      margin: 0;
+    }
+    &__img_size_m {
       max-width: 100%;
       margin: 0;
     }
