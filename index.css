@@ -184,6 +184,7 @@
   }
   .header__list {
     width: 100%;
+    row-gap: 40px;
   }
   .header__close {
     width: 30px;
@@ -199,5 +200,131 @@
     width: 25px;
     height: 25px;
     margin: 25px;
+  }
+}
+
+.main {
+  padding: 80px 20px;
+}
+.main__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1023px) {
+  .main {
+    padding: 60px 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 40px 20px;
+  }
+}
+
+.about {
+  width: 100%;
+  background-color: #fff;
+}
+.about__header {
+  display: flex;
+  justify-content: space-between;
+}
+.about__title {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #0a0a0a;
+}
+@media screen and (max-width: 1240px) {
+  .about__title {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+}
+@media screen and (max-width: 740px) {
+  .about__title {
+    font-size: 24px;
+    line-height: 1.33;
+  }
+}
+.about__text {
+  margin: 0;
+  padding: 0;
+  max-width: 50%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.6;
+}
+.about__article {
+  margin: 80px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 700px;
+  z-index: 2;
+  margin: 0 -170px 0 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.37;
+  letter-spacing: 0.02em;
+}
+.about__quote-text {
+  margin: 0;
+  padding: 0;
+}
+.about__author {
+  margin: 24px 0 0;
+  padding: 0;
+}
+.about__img {
+  display: block;
+  margin: 0 195px 0 0;
+  max-width: 700px;
+}
+@media screen and (max-width: 1024px) {
+  .about__article {
+    margin-top: 70px;
+  }
+  .about__quote {
+    max-width: 364px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__header {
+    flex-direction: column;
+  }
+  .about__text {
+    width: 100%;
+    max-width: none;
+    margin: 20px 0 40px;
+  }
+  .about__article {
+    flex-direction: column;
+    margin: 0;
+  }
+  .about__quote {
+    margin: 20px 0 40px;
+    font-size: 20px;
+    line-height: 1.4;
+    order: 2;
+  }
+  .about__author {
+    margin-top: 20px;
+  }
+  .about__img {
+    max-width: 100%;
+    margin: 0;
   }
 }/*# sourceMappingURL=index.css.map */
