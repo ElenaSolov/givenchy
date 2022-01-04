@@ -116,14 +116,17 @@
       max-width: calc(100% - 282px);
     }
   }
-  @media screen and (max-width: 768px) {
-    &__container {
+
+  @media screen and (max-width: 767px) {
+    &__container{
       padding: 40px 20px;
+      max-width: unset;
     }
   }
-  
   @media screen and (max-width: 450px) {
-    &__footer__text{
+    &__text{
+      font-size: 16px;
+      line-height: 1.5;
       max-width: 280px;
       margin: 0 auto;
     }
@@ -146,6 +149,16 @@
       height: 44px;
       max-width: 280px;
       margin: 0 auto;
+    }
+
+    &__consent {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    &__copyright {
+      font-size: 16px;
+      line-height: 1.5;
     }
   }
 }

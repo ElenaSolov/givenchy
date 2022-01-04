@@ -90,6 +90,10 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
+.header__btn:hover {
+  background-color: #fff;
+  color: #0a0a0a;
+}
 .header__nav {
   display: none;
   margin: 0;
@@ -163,7 +167,7 @@
     margin: 32px 0 0 238px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header {
     background-size: cover;
     padding: 0 20px;
@@ -181,16 +185,21 @@
     margin: 73px 0 0;
     max-width: 300px;
     font-size: 24px;
+    line-height: 1.33;
   }
   .header__menu-btn {
     width: 20px;
     height: 20px;
   }
+  .header__menu-btn::after {
+    background-size: 20px 20px;
+  }
   .header__btn {
     max-width: 300px;
     width: 100%;
-    margin: 32px 0 0;
+    margin: 31px 0 0;
     font-size: 14px;
+    height: 44px;
   }
   .header__menu {
     height: 20px;
@@ -343,7 +352,7 @@
     max-width: unset;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .about__header {
     flex-direction: column;
   }
@@ -351,6 +360,8 @@
     width: 100%;
     max-width: none;
     margin: 20px 0 40px;
+    font-size: 16px;
+    line-height: 1.5;
   }
   .about__article {
     flex-direction: column;
@@ -371,6 +382,11 @@
   }
   .about__img_size_m {
     max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  .about__img_size_s {
+    width: 100%;
     margin: 0;
   }
 }
@@ -419,11 +435,12 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .looks {
-    padding-top: 40px;
+    padding-top: 0;
   }
   .looks__cards {
+    margin: 20px 0 0;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
@@ -533,13 +550,16 @@
     max-width: calc(100% - 282px);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footer__container {
     padding: 40px 20px;
+    max-width: unset;
   }
 }
 @media screen and (max-width: 450px) {
-  .footer__footer__text {
+  .footer__text {
+    font-size: 16px;
+    line-height: 1.5;
     max-width: 280px;
     margin: 0 auto;
   }
@@ -561,6 +581,14 @@
     height: 44px;
     max-width: 280px;
     margin: 0 auto;
+  }
+  .footer__consent {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .footer__copyright {
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
 
