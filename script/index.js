@@ -33,3 +33,30 @@ function smoothScroll(evt) {
     block: 'start'
   })
 }
+
+// random photo change
+const allPhotoes = page.querySelectorAll('.looks__img');
+setInterval(()=> changePhoto(), 2000)
+function changePhoto (){
+  const photo1 = getRandomPhoto();
+  const photo2 = getRandomPhoto();
+
+  photo1.classList.remove('fade-in');
+  photo2.classList.remove('fade-in');
+  photo1.classList.add('fade-out');
+  photo2.classList.add('fade-out');
+  setTimeout(() => {
+    photo1.classList.remove('fade-out');
+    photo2.classList.remove('fade-out');
+    photo1.classList.add('fade-in');
+    photo2.classList.add('fade-in');
+    let temp = photo1.src;
+    photo1.src = photo2.src;
+    photo2.src = temp;
+  }, 300);
+
+}
+
+function getRandomPhoto() {
+  return allPhotoes[Math.floor(Math.floor(Math.random() * (allPhotoes.length-1)))];
+}
