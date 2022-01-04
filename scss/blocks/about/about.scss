@@ -81,11 +81,21 @@
       max-width: 364px;
     }
     &__img_size_l {
-      margin-right: 141px;
+      max-width: 66.5%;
     }
     &__img_size_m {
-      margin-right: 60px;
+      margin-right: 121px;
       width: 50%;
+    }
+    &__img_size_s {
+      align-self: flex-start;
+      margin: 40px 60px 0 0;
+      max-width: 304px;
+    }
+
+    &__text_place_article{
+      margin: unset;
+      max-width: unset;
     }
   }
 
