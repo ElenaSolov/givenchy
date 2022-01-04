@@ -16,3 +16,20 @@ function openMenu() {
 function closeMenu() {
   menuEl.classList.remove('header__nav_opened');
 }
+
+// smooth scroll
+const navLinks = page.querySelectorAll('.header__link');
+for (let link of navLinks) {
+  link.addEventListener('click', smoothScroll);
+}
+
+function smoothScroll(evt) {
+  evt.preventDefault()
+
+  const blockID = evt.target.getAttribute('href').slice(1);
+
+  document.getElementById(blockID).scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  })
+}

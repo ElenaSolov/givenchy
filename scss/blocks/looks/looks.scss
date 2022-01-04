@@ -1,5 +1,6 @@
 .looks {
   width: 100%;
+  padding-top: 80px;
 
   &__title {
     @include section-title;
@@ -26,6 +27,9 @@
   }
 
   @media screen and (max-width: 768px) {
+    &{
+      padding-top: 40px;
+    }
     &__cards {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(4, 1fr);

@@ -14,11 +14,15 @@
   &__text {
     margin: 0;
     padding: 0;
-    max-width: 50%;
+    max-width: 49%;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 1.6;
+
+    &_place_article{
+    margin-bottom: 90px;
+    }
   }
 
   &__article {
@@ -58,9 +62,13 @@
     max-width: 700px;
 
     &_size_l {
-      margin: 0 195px 0 0;
+      margin: 0;
+      max-width: unset;
     }
     &_size_m {
+      margin: 0 177px 0 0;
+    }
+    &_size_s {
       margin: 0 82px 0 0;
     }
   }
