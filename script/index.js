@@ -8,7 +8,7 @@ headerEl.addEventListener('click', headerClickHandler);
 
 function headerClickHandler(evt) {
   if (evt.target.classList.contains('header__menu-btn')) openMenu();
-  if (evt.target.classList.contains('header__close')) closeMenu();
+  if (evt.target.classList.contains('header__close')||evt.target.classList.contains('header__link')) closeMenu();
 }
 function openMenu() {
   menuEl.classList.add('header__nav_opened');
