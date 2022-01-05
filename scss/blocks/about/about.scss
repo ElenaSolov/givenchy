@@ -1,0 +1,144 @@
+.about {
+  width: 100%;
+  background-color: #fff;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    @include section-title;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    max-width: 49%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+
+    &_place_article{
+    margin-bottom: 90px;
+    }
+  }
+
+  &__article {
+    margin: 80px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+    z-index: 2;
+    margin: 0 -170px 0 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.37;
+    letter-spacing: 0.02em;
+  }
+
+  &__quote-text {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__author {
+    margin: 24px 0 0;
+    padding: 0;
+  }
+
+  &__img {
+    display: block;
+
+    max-width: 700px;
+
+    &_size_l {
+      margin: 0;
+      max-width: unset;
+    }
+    &_size_m {
+      margin: 0 177px 0 0;
+    }
+    &_size_s {
+      margin: 0 82px 0 0;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__article {
+      margin-top: 70px;
+    }
+    &__quote {
+      max-width: 364px;
+    }
+    &__img_size_l {
+      max-width: 66.5%;
+    }
+    &__img_size_m {
+      margin-right: 121px;
+      width: 50%;
+    }
+    &__img_size_s {
+      align-self: flex-start;
+      margin: 40px 60px 0 0;
+      max-width: 304px;
+    }
+
+    &__text_place_article{
+      margin: unset;
+      max-width: unset;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &__header {
+      flex-direction: column;
+    }
+
+    &__text {
+      width: 100%;
+      max-width: none;
+      margin: 20px 0 40px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    &__article {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    &__quote {
+      margin: 20px 0 40px;
+      font-size: 20px;
+      line-height: 1.4;
+      order: 2;
+    }
+    &__author {
+      margin-top: 20px;
+    }
+
+    &__img_size_l {
+      max-width: 100%;
+      margin: 0;
+    }
+    &__img_size_m {
+      max-width: 100%;
+      width: 100%;
+      margin: 0;
+    }
+    &__img_size_s {
+      width: 100%;
+      margin: 0;
+      max-width: unset;
+    }
+  }
+}
