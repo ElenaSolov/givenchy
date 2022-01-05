@@ -53,10 +53,32 @@ function changePhoto (){
     let temp = photo1.src;
     photo1.src = photo2.src;
     photo2.src = temp;
-  }, 300);
+  }, 400);
 
 }
 
 function getRandomPhoto() {
   return allPhotoes[Math.floor(Math.floor(Math.random() * (allPhotoes.length-1)))];
+}
+
+// text animation in About section
+
+const aboutArticles = page.querySelectorAll('.about__article');
+aboutArticles.forEach(article => console.log(article.children))
+window.addEventListener('scroll', showTextAnimation);
+
+function showTextAnimation() {
+  const triggerLine = window.innerHeight / 7 * 6;
+  aboutArticles.forEach(article => {
+    const articleTop = article.getBoundingClientRect().top;
+
+    if (triggerLine > articleTop) {
+      article.children[0].classList.add('fade-in-right');
+      article.children[1].classList.add('fade-in-left');
+
+    } else {
+      article.children[0].classList.remove('fade-in-right');
+      article.children[1].classList.remove('fade-in-left');
+    };
+  })
 }
