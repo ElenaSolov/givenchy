@@ -2,17 +2,17 @@
   box-sizing: border-box;
   width: 100%;
   background-color: $bg-beige;
-  padding: 0 24px;
-  background-image: url(./images/header.jpg);
-  background-size: contain;
-  background-position: top 0 left 24px;
-  background-repeat: no-repeat;
+
 
   &__container {
+    padding: 20px 24px;
+    background-image: url(./images/header.jpg);
+    background-size: contain;
+    background-position: top 0 left 24px;
+    background-repeat: no-repeat;
     box-sizing: border-box;
     position: relative;
     margin: 0 auto;
-    padding-top: 20px;
     max-width: 1440px;
     min-height: 900px;
 
@@ -145,6 +145,8 @@
   @media screen and (max-width: 1300px) {
     &__container {
       min-height: 646px;
+      background-image: url(./images/header-tablet.jpg);
+      background-position: top 0 left 0;
     }
     &__title {
       font-size: 32px;
@@ -153,11 +155,6 @@
   }
 
   @media screen and (max-width: 1024px) {
-    & {
-      background-image: url(./images/header-tablet.jpg);
-      background-position: top 0 left 0;
-    }
-
     &__title{
       margin: 164px 0 0 238px;
       max-width: 60%;
@@ -169,13 +166,10 @@
     }
   }
   @media screen and (max-width: 767px) {
-    &{
-      background-size: cover;
-      padding: 0 20px;
-    }
     &__container {
       min-height: 526px;
-
+      background-size: cover;
+      padding: 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -223,7 +217,6 @@
   @media screen and (max-width: 460px) {
     &__container {
       min-height: 426px;
-      background-size: cover;
     }
 
     &__close {
